@@ -260,6 +260,7 @@
     
     [path closePath];
     self.popLayer.path = path.CGPath;
+    self.popLayer.opaque = YES;
     self.popLayer.strokeColor = _layerColor ? _layerColor.CGColor : [UIColor whiteColor].CGColor;
 }
 
